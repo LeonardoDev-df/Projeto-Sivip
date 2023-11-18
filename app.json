@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "sivip",
+    "slug": "sivip",
+    "version": "3.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logoIcon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logoIcon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logoAdaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.sivip"
+    },
+    "web": {
+      "favicon": "./assets/logoFavicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "efcc0722-0471-4892-a07b-f8f73b634af5"
+      }
+    }
+  }
+}

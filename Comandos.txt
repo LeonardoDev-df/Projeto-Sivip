@@ -1,0 +1,21 @@
+cd Documents
+
+cd Cursos
+
+cd Sivip
+
+
+npx create-expo-app my-app
+
+para criar aplicativo react native com expo
+
+npx expo start 
+
+inicializar o app no prompt de comando
+
+-----------------------------------------------
+gerar apk
+
+eas build -p android --profile preview
+
+-------------------------------------------
