@@ -4,8 +4,11 @@ import { View, Text } from 'react-native';
 
 export function Pagamento() {
   return (
-    <View>
+    <View >
       <Text>Conteúdo da tela de Pagamento</Text>
+      <Text>Conteúdo da tela de Pagamento</Text>
+      <Text>Conteúdo da tela de Pagamento</Text>
+      <Text>Conteúdo da tela de Psdfsdfsdfsfagamento</Text>
     </View>
   );
 }

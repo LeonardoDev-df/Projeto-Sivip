@@ -1,8 +1,8 @@
 cd Documents
 
-cd Cursos
+cd GitHub
 
-cd Sivip
+cd Projeto-Sivip
 
 
 npx create-expo-app my-app
