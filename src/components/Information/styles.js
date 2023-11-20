@@ -13,19 +13,22 @@ export default StyleSheet.create({
     marginBottom: 10,
   },
   companyName: {
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: 'bold',
     marginBottom: 10,
+    textAlign: 'center', // Centraliza o texto
   },
   pdfLinkText: {
-    fontSize: 16,
+    fontSize: 14,
+    textAlign: 'center', // Centraliza o texto
   },
   userInfoCard: {
-    // Add any additional styles for the user info card
+    // Adicione qualquer estilo adicional para o card de informações do usuário
   },
   personalDataTitle: {
-    fontSize: 16,
+    fontSize: 14,
     marginBottom: 10,
+    textAlign: 'center', // Centraliza o texto
   },
   row: {
     flexDirection: 'row',
@@ -33,21 +36,29 @@ export default StyleSheet.create({
   userImg: {
     flex: 1,
   },
+  iconContainer: {
+    marginLeft: 8, // Adapte o valor conforme necessário
+    alignItems: 'center',
+    justifyContent: 'center',
+  },  
   imgWrapper: {
-    // Add styles for the image wrapper
+    // Adicione estilos para o invólucro da imagem
   },
   employeeSince: {
-    fontSize: 14,
-    marginTop: 5,
+    fontSize: 12,
+    marginTop: 4,
+    textAlign: 'center', // Centraliza o texto
   },
   userInfo: {
     flex: 1,
+    justifyContent: 'center', // Centraliza os itens verticalmente
   },
   simplebox: {
     borderWidth: 1,
     borderColor: '#000',
     marginBottom: 10,
-    padding: 5,
+    padding: 6, // Aumenta o preenchimento
+    textAlign: 'center', // Centraliza o texto
   },
   formGroup: {
     marginBottom: 10,
@@ -56,4 +67,4 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-    });
+});

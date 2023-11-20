@@ -49,25 +49,28 @@ export function Information({ userData }) {
 
             {/* ... outros campos de dados ... */}
             
+                      
             <View style={styles.formGroup}>
-              <Text style={styles.fieldTitle}>Telefone</Text>
+              <Text style={styles.fieldTitle}>Telefone   <Ionicons size={16} name="ios-call" /></Text>
               <View style={styles.inputGroup}>
                 <TextInput style={styles.simplebox} editable={false} value={userData.phoneNumber} />
-                <TouchableOpacity onPress={() => { /* handle edit phone */ }}>
-                  <Ionicons size={19} name="home" />
+                <TouchableOpacity style={styles.iconContainer} onPress={() => { /* handle edit phone */ }}>             
                 </TouchableOpacity>
               </View>
             </View>
 
             <View style={styles.formGroup}>
-              <Text style={styles.fieldTitle}>E-Mail</Text>
+              <Text style={styles.fieldTitle}>E-Mail <Ionicons size={16} name="ios-mail" /></Text> 
               <View style={styles.inputGroup}>
                 <TextInput style={styles.simplebox} editable={false} value={userData.email} />
-                <TouchableOpacity onPress={() => { /* handle edit email */ }}>
-                  <Ionicons size={19} name="home" />
+                <TouchableOpacity style={styles.iconContainer} onPress={() => { /* handle edit email */ }}>              
                 </TouchableOpacity>
               </View>
             </View>
+
+
+
+
           </View>
         </View>
       </View>
