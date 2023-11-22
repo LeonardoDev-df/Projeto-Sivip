@@ -4,10 +4,12 @@ cd GitHub
 
 cd Projeto-Sivip
 
-
+----------------------------------------------
 npx create-expo-app my-app
 
 para criar aplicativo react native com expo
+
+-----------------------------------------------
 
 npx expo start 
 
