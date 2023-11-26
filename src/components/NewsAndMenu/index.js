@@ -9,20 +9,21 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { Ionicons } from '@expo/vector-icons';
 import styles from './styles'; // Importando os estilos do arquivo styles.js
 
-export default function NewsAndMenu({ openMenu, handleMenuClick }) {
+export default function NewsAndMenu() {
 
   
   return (
-    <ScrollView vertical style={styles.newsScroll}>
-      <LinksSection />
-      {/* Adicione o componente Information aqui */}
+    <View >
+      <NewsSection></NewsSection>
+      
+      {/* Adicione o componente Information aqui 
       <NewsCard title="Seguro Odonto da Porto Saúde" date="01/01/2023" content="O seu plano Odontológico da Porto Saúde já está ativo." next="Aproveite já seu benefício, baixe o aplicativo." />
       <NewsCard title="Seguro Odonto da Porto Saúde" date="01/01/2023" content="O seu plano Odontológico da Porto Saúde já está ativo." next="Aproveite já seu benefício, baixe o aplicativo." />
 
       {/* Adicione o componente Information aqui */}
      
 
-    </ScrollView>
+    </View>
 
     
   );

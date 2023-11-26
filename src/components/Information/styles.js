@@ -6,6 +6,18 @@ export default StyleSheet.create({
     padding: 16,
     backgroundColor: '#fff',
   },
+  cardTitlea:{
+    fontWeight: 'bold',
+    marginBottom: 10,
+    textAlign: 'center',
+    color: 'blue'
+  },
+  cardTitle:{
+    fontWeight: 'bold',
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+  
   card: {
     borderWidth: 1,
     borderColor: '#000',
@@ -20,7 +32,8 @@ export default StyleSheet.create({
   },
   pdfLinkText: {
     fontSize: 14,
-    textAlign: 'center', // Centraliza o texto
+    textAlign: 'center',
+    marginBottom: 10, // Centraliza o texto
   },
   userInfoCard: {
     // Adicione qualquer estilo adicional para o card de informações do usuário

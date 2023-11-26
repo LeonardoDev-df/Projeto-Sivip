@@ -13,8 +13,13 @@ import { Pagamento } from '../../components/Pagamento'
 import { Information } from '../../components/Information'
 import { Ferias } from '../../components/Ferias'
 import { Convocation } from '../../components/Convocation'
+import { Frequency } from '../../components/Frequency'
+import { Escala } from '../../components/Escala'
 import styles from './styles'; // Importando os estilos do arquivo styles.js
 import NewsAndMenu from '../../components/NewsAndMenu';
+import { Picker } from '@react-native-picker/picker';
+
+
 
 const Stack = createStackNavigator();
 
@@ -24,12 +29,13 @@ export function AppNavigator() {
       <Stack.Navigator initialRouteName="Home">
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Acess" component={Acess} />
-          <Stack.Screen name="First" component={First} />
+          <Stack.Screen name="NewsAndMenu" component={NewsAndMenu} />
           <Stack.Screen name="Pagamento" component={Pagamento} />
           <Stack.Screen name="Information" component={Information} />
           <Stack.Screen name="Ferias" component={Ferias} />
           <Stack.Screen name="Convocation" component={Convocation} />
-
+          <Stack.Screen name="Frequency" component={Frequency} />
+          <Stack.Screen name="Escala" component={Escala} />
           {/* Adicione mais telas conforme necessário */}
       </Stack.Navigator>
 
@@ -124,11 +130,6 @@ export default function Acess({}) {
         <NewsAndMenu />
       )}
 
-      {contentComponent === 'First' && (
-        <First />
-      )}
-
-
       {contentComponent === 'Pagamento' && (
         <Pagamento />
       )}
@@ -147,13 +148,20 @@ export default function Acess({}) {
       {contentComponent === 'Convocation' && (
         <Convocation />
       )}
+
+      {contentComponent === 'Frequency' && (
+              <Frequency />
+      )}
       
+      {contentComponent === 'Escala' && (
+              <Escala />
+      )}
       {/* Menu lateral simulado */}
       {isMenuOpen && (
         <View style={styles.menuContainer}>
           <View style={styles.headerMenu}>
           </View>    
-                  <TouchableOpacity style={styles.orga}   onPress={() => handleMenuClick('First')}>
+                  <TouchableOpacity style={styles.orga}   onPress={() => handleMenuClick('NewsAndMenu')}>
                   <Ionicons size={19}  name="home" />
                     <Text style={styles.menuItem}>  Início</Text>
                   </TouchableOpacity>
@@ -183,12 +191,12 @@ export default function Acess({}) {
                     <Text style={styles.menuItem}>  Convocações</Text>
                   </TouchableOpacity>       
 
-                  <TouchableOpacity style={styles.orga}  onPress={closeMenu}>
+                  <TouchableOpacity style={styles.orga}  onPress={() => handleMenuClick('Frequency')}>
                   <Icon name="clock-o" size={18} color="#000" />
                     <Text style={styles.menuItem}>  Frequência</Text>
                   </TouchableOpacity>
 
-                  <TouchableOpacity style={styles.orga}  onPress={closeMenu}>
+                  <TouchableOpacity style={styles.orga}  onPress={() => handleMenuClick('Escala')}>
                   <Icon name="calendar" size={18} color="#000" />
                     <Text style={styles.menuItem}>  Escala</Text>
                   </TouchableOpacity>

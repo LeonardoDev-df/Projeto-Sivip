@@ -20,26 +20,19 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 16,
   },
-  table: {
-    fontWeight: 'bold',
-    flexDirection: 'row',
-    marginTop: 16,
-    marginBottom: 8, // Adiciona distância abaixo de cada item
+  alertContainer: {
+    backgroundColor: '#e8f2f7', // Cor de fundo
+    padding: 15,
+    marginBottom: 20,
+    borderLeftWidth: 4, // Adiciona a borda à esquerda
+    borderLeftColor: '#31708f', // Cor da borda à esquerda
+    borderRadius: 4,
+    top: -350
   },
-  tableHeader: {
+  alertText: {
+    color: '#31708f', // Cor do texto
+    fontSize: 16,
     fontWeight: 'bold',
-    marginBottom: 8,
-    flex: 1,
-  },
-  tableRow: {
-    fontWeight: 'bold',
-    flexDirection: 'row', // Para alinhar os textos na mesma linha
-    marginBottom: 8,
-  },
-  tableCell: {
-    fontWeight: 'bold',
-    marginBottom: 12,
-    flex: 1, // Cada célula ocupa a mesma largura
   },
 });
 

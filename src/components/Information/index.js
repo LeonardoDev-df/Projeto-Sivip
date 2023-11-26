@@ -8,13 +8,15 @@ export function Information({ userData }) {
   return (
     <View style={styles.container}>
       {/* Card do Regulamento Interno */}
-      <View style={styles.card}>
-        <Text style={styles.cardTitle}>Regulamento Interno</Text>
-        <TouchableOpacity onPress={() => { /* handle press */ }}>
-          <Text style={styles.pdfLinkText}>
-            <Image source={require('../../assets/Logo.png')} /> {userData.regulationPdfLinkText}
-          </Text>
+      <TouchableOpacity onPress={() => { /* handle press */ }}>
+        <Text style={styles.cardTitlea}>Regulamento Interno</Text>
+         
         </TouchableOpacity>
+      <View style={styles.card}>
+          <Text style={styles.pdfLinkText}>
+            <Image style={styles.cardFoto}  source={require('../../assets/Logo.png')} /> {userData.regulationPdfLinkText}
+          </Text>
+        
       </View>
 
       {/* Card de Dados Pessoais */}
